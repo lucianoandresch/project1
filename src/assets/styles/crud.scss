@@ -1,0 +1,68 @@
+.textbox {
+    height: 300px;
+    width: 200px;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    resize: none;
+}
+
+.top {
+    vertical-align: top;
+}
+
+.submit {
+    margin-top: 20px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+#create-form {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.container-half {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.max-width {
+    max-width: 100%;
+}
+
+.image123 {
+    width: 75%;
+    height: 75%;
+    display: block;
+    margin: auto;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+.welcome-image {}
+
+#search-posts {
+    padding-top: 30px;
+    width: 18%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.center {
+    text-align: center;
+}
+
+.newcolor {
+    width: 200px;
+    height: 70px;
+    padding-top: 25px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.newpad {}

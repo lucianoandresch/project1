@@ -1,0 +1,59 @@
+<% if (notice) { %>
+    <p>
+        <%= notice %>
+    </p>
+    <% } %>
+        <div class=high-class-center>
+            <div class="header-container">
+                <h2>Posts!</h2>
+                <h3>
+                    <%= message_posts %>
+                </h3>
+            </div>
+        </div>
+        <div class="create-max">
+            <a class=full href=<%=newPostPath()%> >
+                    CREATE POST
+            </a>
+        </div>
+        <div>
+            <% postslist.forEach( (post) => { %>
+                <div class="container-max">
+                    <div class="container-min">
+                        <div class="grida">
+                            <div>
+                                <div>
+                                    <p>Id:
+                                        <%= post.id %>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>Title:
+                                        <%= post.title %>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>Creator:
+                                        <%= post.creator_id %>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-read">
+                                <a class=read href=<%=postPath(post.id)%> >
+                                        READ POST
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gridb">
+                            <p>Text:</p>
+                            <textarea readonly class="text">
+                                <%= post.text %>
+                            </textarea>
+                        </div>
+                        <div class="gridc">
+                            <img class="image-buff" src="<%= assetPath('book.png') %>" alt="Book" />
+                        </div>
+                    </div>
+                </div>
+                <% }) %>
+        </div>

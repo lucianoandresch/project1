@@ -1,0 +1,14 @@
+<div class="welcome-image">
+    <img class="image123" src="<%= assetPath('long.jpg') %>" alt="Long" />
+</div>
+<div class="search">
+    <form id="search-posts" action="<%=submitSearch()%>" method="get">
+        <div>
+            <div class="center"><label for="word"><h3>Search for Posts</h3></label></div>
+            <input type="text" name="word" value="Search by Title" />
+        </div>
+        <div>
+            <input class="submit" type="submit" name="create" value="SEARCH" />
+        </div>
+    </form>
+</div>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>=D Writing and Poetry!</title>
+    <% if (env !== 'development') { %>
+        <link rel="stylesheet" href="<%= assetPath('app.css') %>">
+        <% } %>
+</head>
+
+<body>
+    <header>
+        <!--
+      <div id="logo">
+        <img src="<%= assetPath('logo.png') %>" alt="Logo" />
+      </div>
+      -->
+
+        <!-- Start of Navigation-->
+        <div class="nav-bar">
+            <nav>
+                <label class="logo cursive">Writing and Poetry</label>
+                <ul>
+                    <li><a class=nav href="/">Home</a></li>
+                    <li><a class=nav href="/posts">Posts</a></li>
+                    <li><a class=nav href="/users">Users</a></li>
+                    <li><a class=nav href="#">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- END of Navigation-->
+
+    </header>
+    <%- body %>
+        <script src="<%= assetPath('app.js') %>"></script>
+</body>
+
+</html>

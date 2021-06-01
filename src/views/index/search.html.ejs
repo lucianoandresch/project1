@@ -1,0 +1,55 @@
+<h3>Search Result</h3>
+<h3>
+    <%= word %>
+</h3>
+<div class="welcome-image">
+    <img class="image123" src="<%= assetPath('long.jpg') %>" alt="Long" />
+</div>
+<div class="create-max newcolor">
+    <a class="full newpad" href=<%=searchPostNew()%> >
+            SEARCH POSTS
+    </a>
+</div>
+<div>
+
+    <% postslist.forEach( (post) => { %>
+        <div class="container-max">
+            <div class="container-min">
+                <div class="grida">
+                    <div>
+                        <div>
+                            <p>Id:
+                                <%= post.id %>
+                            </p>
+                        </div>
+                        <div>
+                            <p>Title:
+                                <%= post.title %>
+                            </p>
+                        </div>
+                        <div>
+                            <p>Creator:
+                                <%= post.creator_id %>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-read">
+                        <a class=read href=<%=postPath(post.id)%> >
+                                    READ POST
+                            </a>
+                    </div>
+                </div>
+                <div class="gridb">
+                    <p>Text:</p>
+                    <textarea readonly class="text">
+                            <%= post.text %>
+                        </textarea>
+                </div>
+                <div class="gridc">
+                    <img class="image-buff" src="<%= assetPath('book.png') %>" alt="Book" />
+                </div>
+            </div>
+        </div>
+        <% }) %>
+
+</div>

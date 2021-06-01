@@ -1,0 +1,123 @@
+.header-container {
+    //width: 400px;
+    width: 500px;
+    height: 107px;
+    text-align: center;
+    //background: rgb(138, 114, 7);
+    background: #3a698a;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    margin: auto;
+    color: white;
+}
+
+.header-container:hover {
+    width: 90%;
+    height: 90%;
+    font-size: 140%;
+    transition: 1s;
+}
+
+.high-class-center {
+    //background: rgb(153, 138, 194);
+    background: lightgray;
+    width: 700px;
+    height: 200px;
+    padding-top: 45px;
+    padding-bottom: 50 px;
+    margin: auto;
+}
+
+.container-max {
+    //background: rgb(153, 138, 194);
+    background: lightgray;
+    width: 700px;
+    height: 255px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+.container-min {
+    width: 500px;
+    height: 175px;
+    text-align: center;
+    background: #3a698a;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin: auto;
+    color: white;
+    //grid
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.container-min:hover {
+    width: 97%;
+    height: 97%;
+    font-size: 140%;
+    transition: 1s;
+}
+
+.create-max {
+    background: lightgray;
+    width: 700px;
+    height: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.full {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    color: #3a698a;
+    text-align: center;
+    background: transparent;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    margin: auto;
+    border-style: solid;
+    border-color: #3a698a;
+    font-weight: bold;
+}
+
+.image-buff {
+    max-height: 87% !important;
+    max-width: 90% !important;
+    //height: 140px;
+    //width: 140px;
+}
+
+.read-container {}
+
+.read {
+    border-style: solid;
+    font-weight: bold;
+    border-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    border-radius: 10px;
+    font-size: 75%;
+}
+
+.grida {
+    //background-color: blue;
+    display: grid;
+    grid-template-rows: 75% 25%;
+}
+
+.text {
+    resize: none;
+    max-width: 90%;
+    max-height: 90%;
+    height: 110px;
+    width: 180px;
+}

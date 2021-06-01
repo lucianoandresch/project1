@@ -1,0 +1,61 @@
+<% if (notice) { %>
+    <p>
+        <%= notice %>
+    </p>
+    <% } %>
+
+        <div class="high-class-center">
+            <div class="header-container">
+                <h2>Users!</h2>
+                <h3>
+                    <%= message_users %>
+                </h3>
+            </div>
+        </div>
+        <div>
+            <% userslist.forEach( (user) => { %>
+                <div class="container-max">
+                    <div class="container-min">
+                        <div class="grida">
+                            <div>
+                                <div>
+                                    <p>Id:
+                                        <%= user.id %>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>Name:
+                                        <%= user.first_name %>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>Last Name:
+                                        <%= user.first_name %>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container-read">
+                                <a class=read href=<%=userPath(user.id)%> >
+                                        READ USER
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid2">
+                            <div>
+                                <p>Birthdate:
+                                    <%= user.birthdate %>
+                                </p>
+                            </div>
+                            <div>
+                                <p>Email:
+                                    <%= user.email %>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid3">
+                            <img class="image-buff" src="<%= assetPath('user.png') %>" alt="User" />
+                        </div>
+                    </div>
+                </div>
+                <% }) %>
+        </div>

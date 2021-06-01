@@ -1,0 +1,105 @@
+<% if (notice) { %>
+    <p>
+        <%= notice %>
+    </p>
+    <% } %>
+        <div class="container-max">
+            <div class="container-min">
+                <div class="grida">
+                    <div>
+                        <div>
+                            <p>Id:
+                                <%= user.id %>
+                            </p>
+                        </div>
+                        <div>
+                            <p>Name:
+                                <%= user.first_name %>
+                            </p>
+                        </div>
+                        <div>
+                            <p>Last Name:
+                                <%= user.first_name %>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-read">
+                        <a class=read href="#">
+                        READ USER
+                </a>
+                    </div>
+                </div>
+                <div class="grid2">
+                    <div>
+                        <p>Birthdate:
+                            <%= user.birthdate %>
+                        </p>
+                    </div>
+                    <div>
+                        <p>Email:
+                            <%= user.email %>
+                        </p>
+                    </div>
+                </div>
+                <div class="grid3">
+                    <img class="image-buff" src="<%= assetPath('user.png') %>" alt="User" />
+                </div>
+            </div>
+        </div>
+
+        <div class="container-half">
+            <div class="conta">
+                <div class="high-class-center max-width">
+                    <div class="header-container max-width">
+                        <h2>Posts CREATED by this USER!</h2>
+                    </div>
+                </div>
+                <% posts.forEach( (post) => { %>
+                    <div class="container-max max-width">
+                        <div class="container-min max-width">
+                            <div class="grida">
+                                <div>
+                                    <div>
+                                        <p>Id:
+                                            <%= post.id %>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>Title:
+                                            <%= post.title %>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>Creator:
+                                            <%= post.creator_id %>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="container-read">
+                                    <a class=read href=<%=postPath(post.id)%> >
+                                            READ POST
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="gridb">
+                                <p>Text:</p>
+                                <textarea readonly class="text">
+                                    <%= post.text %>
+                                </textarea>
+                            </div>
+                            <div class="gridc">
+                                <img class="image-buff" src="<%= assetPath('book.png') %>" alt="Book" />
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+            <div class="contb">
+                <div class="high-class-center max-width">
+                    <div class="header-container max-width">
+                        <h2>Posts LIKED by this USER!</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
